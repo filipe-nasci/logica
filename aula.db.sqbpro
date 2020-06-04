@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/filip/aula.db" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="498"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="carros"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="carros" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort/><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES(1993,&quot;azul&quot;, &quot;vw gol&quot;, 5.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES (1995,&quot;preto&quot;, &quot;chevrolet kadett&quot;, 4.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES(1992,&quot;preto&quot;, &quot;vw fusca&quot;, 3.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES (1999,&quot;branco&quot;, &quot;chevrolet escort&quot;, 5.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES (2000,&quot;vermelho&quot;, &quot;vw golf&quot;, 10.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES (2001,&quot;cinza&quot;, &quot;chevrolet celta&quot;, 11.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES (2015,&quot;verde&quot;, &quot;cherry qq&quot;, 26.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES (2015,&quot;azul&quot;, &quot;renault sandero&quot;, 30.000);
+
+INSERT INTO carros(ano, cor, nome, valor)
+VALUES (2020,&quot;preto&quot;, &quot;jeep renegade&quot;, 5.000);</sql><sql name="SQL 2">UPDATE carros SET valor = 5 WHERE nome = &quot;chevrolet kadett&quot;
+
+</sql><sql name="SQL 3">SELECT DISTINCT cor FROM carros</sql><sql name=" SQL4">SELECT count (ano) FROM carros WHERE ano&lt;2000</sql><sql name="SQL 5">SELECT avg (valor) FROM carros WHERE ano&gt;2000</sql><sql name="SQL 6">SELECT sum (valor) FROM carros </sql><sql name="SQL 7">SELECT nome FROM carros WHERE nome like &quot;F%&quot;</sql><sql name="SQL 8">SELECT nome FROM carros WHERE nome like &quot;%A&quot;</sql><sql name="SQL 9">SELECT nome FROM carros WHERE ano BETWEEN 1990 AND 1995</sql><sql name="SQL 10">SELECT max (valor) FROM carros </sql><sql name="SQL 11">SELECT min (valor) FROM carros </sql><sql name="SQL 12">SELECT max (ano) FROM carros </sql><sql name="SQL 13">SELECT min (ano) FROM carros </sql><sql name="SQL 14">SELECT * FROM carros ORDER BY nome ASC</sql><sql name="SQL 15">SELECT * FROM carros ORDER BY nome DESC</sql><current_tab id="14"/></tab_sql></sqlb_project>
